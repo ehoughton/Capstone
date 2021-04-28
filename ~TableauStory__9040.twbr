@@ -1,0 +1,2509 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0420.1112                               -->
+<workbook source-build='2021.1.1 (20211.21.0420.1112)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Whatineed+ (Analysis Notebook)' inline='true' name='federated.0mu049r0pvqd1n177j4m11sxk4ze' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Analysis Notebook' name='excel-direct.1jakvf91d724s915iamwz0tmpljl'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ehoug/Documents/NSS/Data/Capstone/Capstone/Data/Analysis Notebook.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1jakvf91d724s915iamwz0tmpljl' name='All genes, CpG islands' table='[&apos;All genes, CpG islands$&apos;]' type='table'>
+          <columns gridOrigin='A1:AE10001:no:A1:AE10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='CpGName' ordinal='0' />
+            <column datatype='integer' name='CpGLength' ordinal='1' />
+            <column datatype='integer' name='J' ordinal='2' />
+            <column datatype='integer' name='A' ordinal='3' />
+            <column datatype='integer' name='B' ordinal='4' />
+            <column datatype='integer' name='K' ordinal='5' />
+            <column datatype='integer' name='C' ordinal='6' />
+            <column datatype='integer' name='D' ordinal='7' />
+            <column datatype='integer' name='E1' ordinal='8' />
+            <column datatype='integer' name='H' ordinal='9' />
+            <column datatype='integer' name='PositiveSampleCount' ordinal='10' />
+            <column datatype='string' name='GeneName' ordinal='11' />
+            <column datatype='string' name='Promoter_Classification' ordinal='12' />
+            <column datatype='string' name='Chromosome' ordinal='13' />
+            <column datatype='string' name='Strand' ordinal='14' />
+            <column datatype='string' name='CGI_RelativeLocation_To_Gene' ordinal='15' />
+            <column datatype='integer' name='RelativeDistanceToTSS' ordinal='16' />
+            <column datatype='integer' name='RelativeDistanceToTTS' ordinal='17' />
+            <column datatype='string' name='Accession' ordinal='18' />
+            <column datatype='integer' name='TSS' ordinal='19' />
+            <column datatype='integer' name='TTS' ordinal='20' />
+            <column datatype='integer' name='TranscriptsLength' ordinal='21' />
+            <column datatype='string' name='ProteinID' ordinal='22' />
+            <column datatype='string' name='ProteinName' ordinal='23' />
+            <column datatype='string' name='Description' ordinal='24' />
+            <column datatype='integer' name='cpgNum' ordinal='25' />
+            <column datatype='integer' name='gcNum' ordinal='26' />
+            <column datatype='real' name='perCpg' ordinal='27' />
+            <column datatype='real' name='perGc' ordinal='28' />
+            <column datatype='integer' name='CpGStart' ordinal='29' />
+            <column datatype='integer' name='CpGEnd' ordinal='30' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.1jakvf91d724s915iamwz0tmpljl' name='Whatineed' table='[Whatineed$]' type='table'>
+            <columns gridOrigin='A1:AC10001:no:A1:AC10001:0' header='yes' outcome='6'>
+              <column datatype='string' name='SampleName' ordinal='0' />
+              <column datatype='integer' name='PeakID' ordinal='1' />
+              <column datatype='string' name='PeakChromosome' ordinal='2' />
+              <column datatype='integer' name='PeakStart' ordinal='3' />
+              <column datatype='integer' name='PeakEnd' ordinal='4' />
+              <column datatype='integer' name='PeakLength' ordinal='5' />
+              <column datatype='real' name='PeakScore' ordinal='6' />
+              <column datatype='real' name='PeakMValue' ordinal='7' />
+              <column datatype='string' name='CpGName' ordinal='8' />
+              <column datatype='string' name='GeneName' ordinal='9' />
+              <column datatype='string' name='Promoter_Classification' ordinal='10' />
+              <column datatype='string' name='Strand' ordinal='11' />
+              <column datatype='string' name='RelativeLocationToGene' ordinal='12' />
+              <column datatype='integer' name='RelativeDistanceToTSS' ordinal='13' />
+              <column datatype='integer' name='RelativeDistanceToTTS' ordinal='14' />
+              <column datatype='string' name='ProteinID' ordinal='15' />
+              <column datatype='string' name='ProteinName' ordinal='16' />
+              <column datatype='string' name='Description' ordinal='17' />
+              <column datatype='string' name='Accession' ordinal='18' />
+              <column datatype='integer' name='TSS' ordinal='19' />
+              <column datatype='integer' name='TTS' ordinal='20' />
+              <column datatype='integer' name='TranscriptsLength' ordinal='21' />
+              <column datatype='integer' name='CpGLength' ordinal='22' />
+              <column datatype='integer' name='cpgNum' ordinal='23' />
+              <column datatype='integer' name='gcNum' ordinal='24' />
+              <column datatype='real' name='perCpg' ordinal='25' />
+              <column datatype='real' name='perGc' ordinal='26' />
+              <column datatype='integer' name='CpGStart' ordinal='27' />
+              <column datatype='integer' name='CpGEnd' ordinal='28' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1jakvf91d724s915iamwz0tmpljl' name='All genes, CpG islands' table='[&apos;All genes, CpG islands$&apos;]' type='table'>
+            <columns gridOrigin='A1:AE10001:no:A1:AE10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='CpGName' ordinal='0' />
+              <column datatype='integer' name='CpGLength' ordinal='1' />
+              <column datatype='integer' name='J' ordinal='2' />
+              <column datatype='integer' name='A' ordinal='3' />
+              <column datatype='integer' name='B' ordinal='4' />
+              <column datatype='integer' name='K' ordinal='5' />
+              <column datatype='integer' name='C' ordinal='6' />
+              <column datatype='integer' name='D' ordinal='7' />
+              <column datatype='integer' name='E1' ordinal='8' />
+              <column datatype='integer' name='H' ordinal='9' />
+              <column datatype='integer' name='PositiveSampleCount' ordinal='10' />
+              <column datatype='string' name='GeneName' ordinal='11' />
+              <column datatype='string' name='Promoter_Classification' ordinal='12' />
+              <column datatype='string' name='Chromosome' ordinal='13' />
+              <column datatype='string' name='Strand' ordinal='14' />
+              <column datatype='string' name='CGI_RelativeLocation_To_Gene' ordinal='15' />
+              <column datatype='integer' name='RelativeDistanceToTSS' ordinal='16' />
+              <column datatype='integer' name='RelativeDistanceToTTS' ordinal='17' />
+              <column datatype='string' name='Accession' ordinal='18' />
+              <column datatype='integer' name='TSS' ordinal='19' />
+              <column datatype='integer' name='TTS' ordinal='20' />
+              <column datatype='integer' name='TranscriptsLength' ordinal='21' />
+              <column datatype='string' name='ProteinID' ordinal='22' />
+              <column datatype='string' name='ProteinName' ordinal='23' />
+              <column datatype='string' name='Description' ordinal='24' />
+              <column datatype='integer' name='cpgNum' ordinal='25' />
+              <column datatype='integer' name='gcNum' ordinal='26' />
+              <column datatype='real' name='perCpg' ordinal='27' />
+              <column datatype='real' name='perGc' ordinal='28' />
+              <column datatype='integer' name='CpGStart' ordinal='29' />
+              <column datatype='integer' name='CpGEnd' ordinal='30' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[A]' value='[All genes, CpG islands].[A]' />
+          <map key='[Accession (All genes, CpG islands)]' value='[All genes, CpG islands].[Accession]' />
+          <map key='[Accession]' value='[Whatineed].[Accession]' />
+          <map key='[B]' value='[All genes, CpG islands].[B]' />
+          <map key='[CGI_RelativeLocation_To_Gene]' value='[All genes, CpG islands].[CGI_RelativeLocation_To_Gene]' />
+          <map key='[C]' value='[All genes, CpG islands].[C]' />
+          <map key='[Chromosome]' value='[All genes, CpG islands].[Chromosome]' />
+          <map key='[CpGEnd (All genes, CpG islands)]' value='[All genes, CpG islands].[CpGEnd]' />
+          <map key='[CpGEnd]' value='[Whatineed].[CpGEnd]' />
+          <map key='[CpGLength (All genes, CpG islands)]' value='[All genes, CpG islands].[CpGLength]' />
+          <map key='[CpGLength]' value='[Whatineed].[CpGLength]' />
+          <map key='[CpGName (All genes, CpG islands)]' value='[All genes, CpG islands].[CpGName]' />
+          <map key='[CpGName]' value='[Whatineed].[CpGName]' />
+          <map key='[CpGStart (All genes, CpG islands)]' value='[All genes, CpG islands].[CpGStart]' />
+          <map key='[CpGStart]' value='[Whatineed].[CpGStart]' />
+          <map key='[D]' value='[All genes, CpG islands].[D]' />
+          <map key='[Description (All genes, CpG islands)]' value='[All genes, CpG islands].[Description]' />
+          <map key='[Description]' value='[Whatineed].[Description]' />
+          <map key='[E1]' value='[All genes, CpG islands].[E1]' />
+          <map key='[GeneName (All genes, CpG islands)]' value='[All genes, CpG islands].[GeneName]' />
+          <map key='[GeneName]' value='[Whatineed].[GeneName]' />
+          <map key='[H]' value='[All genes, CpG islands].[H]' />
+          <map key='[J]' value='[All genes, CpG islands].[J]' />
+          <map key='[K]' value='[All genes, CpG islands].[K]' />
+          <map key='[PeakChromosome]' value='[Whatineed].[PeakChromosome]' />
+          <map key='[PeakEnd]' value='[Whatineed].[PeakEnd]' />
+          <map key='[PeakID]' value='[Whatineed].[PeakID]' />
+          <map key='[PeakLength]' value='[Whatineed].[PeakLength]' />
+          <map key='[PeakMValue]' value='[Whatineed].[PeakMValue]' />
+          <map key='[PeakScore]' value='[Whatineed].[PeakScore]' />
+          <map key='[PeakStart]' value='[Whatineed].[PeakStart]' />
+          <map key='[PositiveSampleCount]' value='[All genes, CpG islands].[PositiveSampleCount]' />
+          <map key='[Promoter_Classification (All genes, CpG islands)]' value='[All genes, CpG islands].[Promoter_Classification]' />
+          <map key='[Promoter_Classification]' value='[Whatineed].[Promoter_Classification]' />
+          <map key='[ProteinID (All genes, CpG islands)]' value='[All genes, CpG islands].[ProteinID]' />
+          <map key='[ProteinID]' value='[Whatineed].[ProteinID]' />
+          <map key='[ProteinName (All genes, CpG islands)]' value='[All genes, CpG islands].[ProteinName]' />
+          <map key='[ProteinName]' value='[Whatineed].[ProteinName]' />
+          <map key='[RelativeDistanceToTSS (All genes, CpG islands)]' value='[All genes, CpG islands].[RelativeDistanceToTSS]' />
+          <map key='[RelativeDistanceToTSS]' value='[Whatineed].[RelativeDistanceToTSS]' />
+          <map key='[RelativeDistanceToTTS (All genes, CpG islands)]' value='[All genes, CpG islands].[RelativeDistanceToTTS]' />
+          <map key='[RelativeDistanceToTTS]' value='[Whatineed].[RelativeDistanceToTTS]' />
+          <map key='[RelativeLocationToGene]' value='[Whatineed].[RelativeLocationToGene]' />
+          <map key='[SampleName]' value='[Whatineed].[SampleName]' />
+          <map key='[Strand (All genes, CpG islands)]' value='[All genes, CpG islands].[Strand]' />
+          <map key='[Strand]' value='[Whatineed].[Strand]' />
+          <map key='[TSS (All genes, CpG islands)]' value='[All genes, CpG islands].[TSS]' />
+          <map key='[TSS]' value='[Whatineed].[TSS]' />
+          <map key='[TTS (All genes, CpG islands)]' value='[All genes, CpG islands].[TTS]' />
+          <map key='[TTS]' value='[Whatineed].[TTS]' />
+          <map key='[TranscriptsLength (All genes, CpG islands)]' value='[All genes, CpG islands].[TranscriptsLength]' />
+          <map key='[TranscriptsLength]' value='[Whatineed].[TranscriptsLength]' />
+          <map key='[cpgNum (All genes, CpG islands)]' value='[All genes, CpG islands].[cpgNum]' />
+          <map key='[cpgNum]' value='[Whatineed].[cpgNum]' />
+          <map key='[gcNum (All genes, CpG islands)]' value='[All genes, CpG islands].[gcNum]' />
+          <map key='[gcNum]' value='[Whatineed].[gcNum]' />
+          <map key='[perCpg (All genes, CpG islands)]' value='[All genes, CpG islands].[perCpg]' />
+          <map key='[perCpg]' value='[Whatineed].[perCpg]' />
+          <map key='[perGc (All genes, CpG islands)]' value='[All genes, CpG islands].[perGc]' />
+          <map key='[perGc]' value='[Whatineed].[perGc]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AC10001:no:A1:AC10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AE10001:no:A1:AE10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SampleName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SampleName]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>SampleName</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PeakID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PeakID]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>PeakID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PeakChromosome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PeakChromosome]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>PeakChromosome</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PeakStart</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PeakStart]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>PeakStart</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PeakEnd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PeakEnd]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>PeakEnd</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PeakLength</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PeakLength]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>PeakLength</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PeakScore</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PeakScore]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>PeakScore</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PeakMValue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PeakMValue]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>PeakMValue</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CpGName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CpGName]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>CpGName</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeneName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[GeneName]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>GeneName</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Promoter_Classification</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Promoter_Classification]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>Promoter_Classification</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Strand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Strand]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>Strand</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RelativeLocationToGene</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[RelativeLocationToGene]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>RelativeLocationToGene</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RelativeDistanceToTSS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RelativeDistanceToTSS]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>RelativeDistanceToTSS</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RelativeDistanceToTTS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RelativeDistanceToTTS]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>RelativeDistanceToTTS</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProteinID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ProteinID]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>ProteinID</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProteinName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ProteinName]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>ProteinName</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accession</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Accession]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>Accession</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TSS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TSS]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>TSS</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TTS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TTS]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>TTS</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TranscriptsLength</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TranscriptsLength]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>TranscriptsLength</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CpGLength</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CpGLength]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>CpGLength</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cpgNum</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cpgNum]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>cpgNum</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gcNum</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gcNum]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>gcNum</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>perCpg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[perCpg]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>perCpg</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>perGc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[perGc]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>perGc</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CpGStart</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CpGStart]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>CpGStart</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CpGEnd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CpGEnd]</local-name>
+            <parent-name>[Whatineed]</parent-name>
+            <remote-alias>CpGEnd</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CpGName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CpGName (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>CpGName</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CpGLength</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CpGLength (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>CpGLength</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>J</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[J]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>J</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[A]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>A</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[B]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>B</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>K</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[K]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>K</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[C]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>C</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[D]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>D</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[E1]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>E1</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>H</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[H]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>H</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PositiveSampleCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PositiveSampleCount]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>PositiveSampleCount</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeneName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[GeneName (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>GeneName</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Promoter_Classification</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Promoter_Classification (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>Promoter_Classification</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Chromosome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Chromosome]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>Chromosome</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Strand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Strand (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>Strand</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CGI_RelativeLocation_To_Gene</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CGI_RelativeLocation_To_Gene]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>CGI_RelativeLocation_To_Gene</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RelativeDistanceToTSS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RelativeDistanceToTSS (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>RelativeDistanceToTSS</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RelativeDistanceToTTS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RelativeDistanceToTTS (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>RelativeDistanceToTTS</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accession</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Accession (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>Accession</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TSS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TSS (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>TSS</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TTS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TTS (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>TTS</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TranscriptsLength</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TranscriptsLength (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>TranscriptsLength</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProteinID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ProteinID (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>ProteinID</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProteinName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ProteinName (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>ProteinName</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cpgNum</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cpgNum (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>cpgNum</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gcNum</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gcNum (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>gcNum</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>perCpg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[perCpg (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>perCpg</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>perGc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[perGc (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>perGc</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CpGStart</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CpGStart (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>CpGStart</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CpGEnd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CpGEnd (All genes, CpG islands)]</local-name>
+            <parent-name>[All genes, CpG islands]</parent-name>
+            <remote-alias>CpGEnd</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CGI RelativeLocation To Gene' datatype='string' name='[CGI_RelativeLocation_To_Gene]' role='dimension' type='nominal' />
+      <column caption='MethylationDensity' datatype='real' name='[Calculation_636133483939946498]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[CpGLength (All genes, CpG islands)]/[GeneName (All genes, CpG islands)]' />
+      </column>
+      <column caption='Cp G End' datatype='integer' name='[CpGEnd]' role='measure' type='quantitative' />
+      <column caption='Cp G Length' datatype='integer' name='[CpGLength]' role='measure' type='quantitative' />
+      <column caption='Cp G Name' datatype='string' name='[CpGName]' role='dimension' type='nominal' />
+      <column caption='Cp G Start' datatype='integer' name='[CpGStart]' role='measure' type='quantitative' />
+      <column caption='Gene Name' datatype='string' name='[GeneName]' role='dimension' type='nominal' />
+      <column caption='Peak Chromosome' datatype='string' name='[PeakChromosome]' role='dimension' type='nominal' />
+      <column caption='Peak End' datatype='integer' name='[PeakEnd]' role='measure' type='quantitative' />
+      <column caption='Peak ID' datatype='integer' name='[PeakID]' role='dimension' type='ordinal' />
+      <column caption='Peak Length' datatype='integer' name='[PeakLength]' role='measure' type='quantitative' />
+      <column caption='Peak M Value' datatype='real' name='[PeakMValue]' role='measure' type='quantitative' />
+      <column caption='Peak Score' datatype='real' name='[PeakScore]' role='measure' type='quantitative' />
+      <column caption='Peak Start' datatype='integer' name='[PeakStart]' role='measure' type='quantitative' />
+      <column caption='Positive Sample Count' datatype='integer' name='[PositiveSampleCount]' role='measure' type='quantitative' />
+      <column caption='Promoter Classification (All genes, CpG islands)' datatype='string' name='[Promoter_Classification (All genes, CpG islands)]' role='dimension' type='nominal' />
+      <column caption='Promoter Classification' datatype='string' name='[Promoter_Classification]' role='dimension' type='nominal' />
+      <column caption='Protein ID' datatype='string' name='[ProteinID]' role='dimension' type='nominal' />
+      <column caption='Protein Name' datatype='string' name='[ProteinName]' role='dimension' type='nominal' />
+      <column caption='Relative Distance To TSS' datatype='integer' name='[RelativeDistanceToTSS]' role='measure' type='quantitative' />
+      <column caption='Relative Distance To TTS' datatype='integer' name='[RelativeDistanceToTTS]' role='measure' type='quantitative' />
+      <column caption='Relative Location To Gene' datatype='string' name='[RelativeLocationToGene]' role='dimension' type='nominal' />
+      <column caption='Sample Name' datatype='string' name='[SampleName]' role='dimension' type='nominal' />
+      <column caption='Transcripts Length' datatype='integer' name='[TranscriptsLength]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='All genes, CpG islands' datatype='table' name='[__tableau_internal_object_id__].[All genes, CpG islands_4D801994C92F4CD787AA0FA344882344]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Whatineed' datatype='table' name='[__tableau_internal_object_id__].[Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[cpgNum (All genes, CpG islands)]' role='dimension' type='ordinal' />
+      <column caption='Cpg Num' datatype='integer' name='[cpgNum]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[gcNum (All genes, CpG islands)]' role='dimension' type='ordinal' />
+      <column caption='Gc Num' datatype='integer' name='[gcNum]' role='dimension' type='ordinal' />
+      <column caption='Per Cpg' datatype='real' name='[perCpg]' role='measure' type='quantitative' />
+      <column caption='Per Gc' datatype='real' name='[perGc]' role='measure' type='quantitative' />
+      <column-instance column='[Promoter_Classification (All genes, CpG islands)]' derivation='None' name='[none:Promoter_Classification (All genes, CpG islands):nk]' pivot='key' type='nominal' />
+      <column-instance column='[Promoter_Classification]' derivation='None' name='[none:Promoter_Classification:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Promoter_Classification:nk]' palette='tableau-10-medium' type='palette'>
+            <map to='#67bf5c'>
+              <bucket>&quot;LCP&quot;</bucket>
+            </map>
+            <map to='#729ece'>
+              <bucket>&quot;HCP&quot;</bucket>
+            </map>
+            <map to='#ff9e4a'>
+              <bucket>&quot;ICP&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Promoter_Classification (All genes, CpG islands):nk]' palette='nuriel_stone_10_0' type='palette'>
+            <map to='#31a1b3'>
+              <bucket>&quot;LCP&quot;</bucket>
+            </map>
+            <map to='#6fb899'>
+              <bucket>&quot;ICP&quot;</bucket>
+            </map>
+            <map to='#8175aa'>
+              <bucket>&quot;HCP&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='All genes, CpG islands' id='All genes, CpG islands_4D801994C92F4CD787AA0FA344882344'>
+            <properties context=''>
+              <relation connection='excel-direct.1jakvf91d724s915iamwz0tmpljl' name='All genes, CpG islands' table='[&apos;All genes, CpG islands$&apos;]' type='table'>
+                <columns gridOrigin='A1:AE10001:no:A1:AE10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='CpGName' ordinal='0' />
+                  <column datatype='integer' name='CpGLength' ordinal='1' />
+                  <column datatype='integer' name='J' ordinal='2' />
+                  <column datatype='integer' name='A' ordinal='3' />
+                  <column datatype='integer' name='B' ordinal='4' />
+                  <column datatype='integer' name='K' ordinal='5' />
+                  <column datatype='integer' name='C' ordinal='6' />
+                  <column datatype='integer' name='D' ordinal='7' />
+                  <column datatype='integer' name='E1' ordinal='8' />
+                  <column datatype='integer' name='H' ordinal='9' />
+                  <column datatype='integer' name='PositiveSampleCount' ordinal='10' />
+                  <column datatype='string' name='GeneName' ordinal='11' />
+                  <column datatype='string' name='Promoter_Classification' ordinal='12' />
+                  <column datatype='string' name='Chromosome' ordinal='13' />
+                  <column datatype='string' name='Strand' ordinal='14' />
+                  <column datatype='string' name='CGI_RelativeLocation_To_Gene' ordinal='15' />
+                  <column datatype='integer' name='RelativeDistanceToTSS' ordinal='16' />
+                  <column datatype='integer' name='RelativeDistanceToTTS' ordinal='17' />
+                  <column datatype='string' name='Accession' ordinal='18' />
+                  <column datatype='integer' name='TSS' ordinal='19' />
+                  <column datatype='integer' name='TTS' ordinal='20' />
+                  <column datatype='integer' name='TranscriptsLength' ordinal='21' />
+                  <column datatype='string' name='ProteinID' ordinal='22' />
+                  <column datatype='string' name='ProteinName' ordinal='23' />
+                  <column datatype='string' name='Description' ordinal='24' />
+                  <column datatype='integer' name='cpgNum' ordinal='25' />
+                  <column datatype='integer' name='gcNum' ordinal='26' />
+                  <column datatype='real' name='perCpg' ordinal='27' />
+                  <column datatype='real' name='perGc' ordinal='28' />
+                  <column datatype='integer' name='CpGStart' ordinal='29' />
+                  <column datatype='integer' name='CpGEnd' ordinal='30' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Whatineed' id='Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80'>
+            <properties context=''>
+              <relation connection='excel-direct.1jakvf91d724s915iamwz0tmpljl' name='Whatineed' table='[Whatineed$]' type='table'>
+                <columns gridOrigin='A1:AC10001:no:A1:AC10001:0' header='yes' outcome='6'>
+                  <column datatype='string' name='SampleName' ordinal='0' />
+                  <column datatype='integer' name='PeakID' ordinal='1' />
+                  <column datatype='string' name='PeakChromosome' ordinal='2' />
+                  <column datatype='integer' name='PeakStart' ordinal='3' />
+                  <column datatype='integer' name='PeakEnd' ordinal='4' />
+                  <column datatype='integer' name='PeakLength' ordinal='5' />
+                  <column datatype='real' name='PeakScore' ordinal='6' />
+                  <column datatype='real' name='PeakMValue' ordinal='7' />
+                  <column datatype='string' name='CpGName' ordinal='8' />
+                  <column datatype='string' name='GeneName' ordinal='9' />
+                  <column datatype='string' name='Promoter_Classification' ordinal='10' />
+                  <column datatype='string' name='Strand' ordinal='11' />
+                  <column datatype='string' name='RelativeLocationToGene' ordinal='12' />
+                  <column datatype='integer' name='RelativeDistanceToTSS' ordinal='13' />
+                  <column datatype='integer' name='RelativeDistanceToTTS' ordinal='14' />
+                  <column datatype='string' name='ProteinID' ordinal='15' />
+                  <column datatype='string' name='ProteinName' ordinal='16' />
+                  <column datatype='string' name='Description' ordinal='17' />
+                  <column datatype='string' name='Accession' ordinal='18' />
+                  <column datatype='integer' name='TSS' ordinal='19' />
+                  <column datatype='integer' name='TTS' ordinal='20' />
+                  <column datatype='integer' name='TranscriptsLength' ordinal='21' />
+                  <column datatype='integer' name='CpGLength' ordinal='22' />
+                  <column datatype='integer' name='cpgNum' ordinal='23' />
+                  <column datatype='integer' name='gcNum' ordinal='24' />
+                  <column datatype='real' name='perCpg' ordinal='25' />
+                  <column datatype='real' name='perGc' ordinal='26' />
+                  <column datatype='integer' name='CpGStart' ordinal='27' />
+                  <column datatype='integer' name='CpGEnd' ordinal='28' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[GeneName]' />
+              <expression op='[GeneName (All genes, CpG islands)]' />
+            </expression>
+            <first-end-point object-id='Whatineed_8F88CD4B61E94C8E9F61CC92272D1D80' />
+            <second-end-point object-id='All genes, CpG islands_4D801994C92F4CD787AA0FA344882344' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name=' Genes/Chrom'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Genes Per Chromosome</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Whatineed+ (Analysis Notebook)' name='federated.0mu049r0pvqd1n177j4m11sxk4ze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mu049r0pvqd1n177j4m11sxk4ze'>
+            <column datatype='string' name='[Chromosome]' role='dimension' type='nominal' />
+            <column datatype='string' name='[GeneName (All genes, CpG islands)]' role='dimension' type='nominal' />
+            <column caption='Peak Length' datatype='integer' name='[PeakLength]' role='measure' type='quantitative' />
+            <column-instance column='[GeneName (All genes, CpG islands)]' derivation='Count' name='[cnt:GeneName (All genes, CpG islands):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Chromosome]' derivation='None' name='[none:Chromosome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PeakLength]' derivation='Sum' name='[sum:PeakLength:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr1&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr10&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr11&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr12&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr13&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr14&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr15&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr16&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr17&quot;' />
+              <groupfilter from='&quot;chr18&quot;' function='range' level='[none:Chromosome:nk]' to='&quot;chr2&quot;' />
+              <groupfilter from='&quot;chr20&quot;' function='range' level='[none:Chromosome:nk]' to='&quot;chr4&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr5&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr6&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr7&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr8&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr9&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chrX&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chrY&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[cnt:GeneName (All genes, CpG islands):qk]' scope='rows' value='Count of Probed Genes' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:PeakLength:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[cnt:GeneName (All genes, CpG islands):qk]</rows>
+        <cols>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk]</cols>
+      </table>
+      <simple-id uuid='{4F7DD7EA-163F-40F0-BC68-4443A6EAD983}' />
+    </worksheet>
+    <worksheet name='AvgTranscript Lengh/Chrom'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Transcript Lengh Per Chromosome</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Whatineed+ (Analysis Notebook)' name='federated.0mu049r0pvqd1n177j4m11sxk4ze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mu049r0pvqd1n177j4m11sxk4ze'>
+            <column caption='Peak Chromosome' datatype='string' name='[PeakChromosome]' role='dimension' type='nominal' />
+            <column caption='Transcripts Length' datatype='integer' name='[TranscriptsLength]' role='measure' type='quantitative' />
+            <column-instance column='[PeakChromosome]' derivation='None' name='[none:PeakChromosome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TranscriptsLength]' derivation='Sum' name='[sum:TranscriptsLength:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:PeakChromosome:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr1&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr10&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr11&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr12&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr13&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr14&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr15&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr16&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr17&quot;' />
+              <groupfilter from='&quot;chr18&quot;' function='range' level='[none:PeakChromosome:nk]' to='&quot;chr2&quot;' />
+              <groupfilter from='&quot;chr20&quot;' function='range' level='[none:PeakChromosome:nk]' to='&quot;chr4&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr5&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr6&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr7&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr8&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr9&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chrX&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chrY&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:PeakChromosome:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:TranscriptsLength:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:PeakChromosome:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:TranscriptsLength:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:TranscriptsLength:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:TranscriptsLength:qk]' />
+              <text column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:TranscriptsLength:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:PeakChromosome:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{CB0BE5D1-DF71-4CE7-B2E7-B9AAAAD17FA4}' />
+    </worksheet>
+    <worksheet name='Chrom19Promoter'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Chromosome 19 Promoter Classification</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Whatineed+ (Analysis Notebook)' name='federated.0mu049r0pvqd1n177j4m11sxk4ze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mu049r0pvqd1n177j4m11sxk4ze'>
+            <column datatype='string' name='[Chromosome]' role='dimension' type='nominal' />
+            <column caption='Gene Name' datatype='string' name='[GeneName]' role='dimension' type='nominal' />
+            <column caption='Promoter Classification' datatype='string' name='[Promoter_Classification]' role='dimension' type='nominal' />
+            <column-instance column='[GeneName]' derivation='Count' name='[cnt:GeneName:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Chromosome]' derivation='None' name='[none:Chromosome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Promoter_Classification]' derivation='None' name='[none:Promoter_Classification:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk]'>
+            <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr19&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification:nk]'>
+            <groupfilter from='&quot;HCP&quot;' function='range' level='[none:Promoter_Classification:nk]' to='&quot;LCP&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification:nk]</column>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification:nk]' />
+              <wedge-size column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[cnt:GeneName:qk]' />
+              <size column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[cnt:GeneName:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.813093900680542' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BD73F8BE-7DEE-403F-8F17-1C8E7F63429D}' />
+    </worksheet>
+    <worksheet name='CpGIslandLengthPerChromosome'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>CpG Island Length Per Chromosome
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Whatineed+ (Analysis Notebook)' name='federated.0mu049r0pvqd1n177j4m11sxk4ze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mu049r0pvqd1n177j4m11sxk4ze'>
+            <column caption='Peak Chromosome' datatype='string' name='[PeakChromosome]' role='dimension' type='nominal' />
+            <column caption='Peak Length' datatype='integer' name='[PeakLength]' role='measure' type='quantitative' />
+            <column-instance column='[PeakChromosome]' derivation='None' name='[none:PeakChromosome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PeakLength]' derivation='Sum' name='[sum:PeakLength:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:PeakChromosome:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr1&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr10&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr11&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr12&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr13&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr14&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr15&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr16&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr17&quot;' />
+              <groupfilter from='&quot;chr18&quot;' function='range' level='[none:PeakChromosome:nk]' to='&quot;chr2&quot;' />
+              <groupfilter from='&quot;chr20&quot;' function='range' level='[none:PeakChromosome:nk]' to='&quot;chr4&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr5&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr6&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr7&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr8&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr9&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chrX&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chrY&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:PeakChromosome:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:PeakLength:qk]' scope='cols' value='CpG Island Total Lengh' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:PeakChromosome:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:PeakLength:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:PeakLength:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1094474792480469' />
+                <format attr='mark-color' value='#00ff00' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:PeakLength:qk]</cols>
+      </table>
+      <simple-id uuid='{9F1499FC-BC60-445B-A2B0-7BB7178390DC}' />
+    </worksheet>
+    <worksheet name='DistanceToTSSFromPromoter19'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Distance to TSS from Promoter</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Whatineed+ (Analysis Notebook)' name='federated.0mu049r0pvqd1n177j4m11sxk4ze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mu049r0pvqd1n177j4m11sxk4ze'>
+            <column datatype='string' name='[Chromosome]' role='dimension' type='nominal' />
+            <column caption='Promoter Classification (All genes, CpG islands)' datatype='string' name='[Promoter_Classification (All genes, CpG islands)]' role='dimension' type='nominal' />
+            <column caption='Relative Distance To TSS' datatype='integer' name='[RelativeDistanceToTSS]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[TSS (All genes, CpG islands)]' role='measure' type='quantitative' />
+            <column-instance column='[RelativeDistanceToTSS]' derivation='Avg' name='[avg:RelativeDistanceToTSS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Chromosome]' derivation='None' name='[none:Chromosome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Promoter_Classification (All genes, CpG islands)]' derivation='None' name='[none:Promoter_Classification (All genes, CpG islands):nk]' pivot='key' type='nominal' />
+            <column-instance column='[TSS (All genes, CpG islands)]' derivation='Sum' name='[sum:TSS (All genes, CpG islands):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk]'>
+            <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr19&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification (All genes, CpG islands):nk]'>
+            <groupfilter from='&quot;HCP&quot;' function='range' level='[none:Promoter_Classification (All genes, CpG islands):nk]' to='&quot;LCP&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:TSS (All genes, CpG islands):qk]' included-values='in-range'>
+            <min>0</min>
+            <max>31050817697</max>
+          </filter>
+          <slices>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk]</column>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:TSS (All genes, CpG islands):qk]</column>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification (All genes, CpG islands):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification (All genes, CpG islands):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[avg:RelativeDistanceToTSS:qk]</rows>
+        <cols>([federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk] / [federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification (All genes, CpG islands):nk])</cols>
+      </table>
+      <simple-id uuid='{7989CE20-17B1-4414-9386-D6D7CDA4441E}' />
+    </worksheet>
+    <worksheet name='DistanceToTSSFromPromoterAll'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Whatineed+ (Analysis Notebook)' name='federated.0mu049r0pvqd1n177j4m11sxk4ze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mu049r0pvqd1n177j4m11sxk4ze'>
+            <column datatype='string' name='[Chromosome]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[CpGLength (All genes, CpG islands)]' role='measure' type='quantitative' />
+            <column caption='Promoter Classification (All genes, CpG islands)' datatype='string' name='[Promoter_Classification (All genes, CpG islands)]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[RelativeDistanceToTSS (All genes, CpG islands)]' role='measure' type='quantitative' />
+            <column-instance column='[CpGLength (All genes, CpG islands)]' derivation='Avg' name='[avg:CpGLength (All genes, CpG islands):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[RelativeDistanceToTSS (All genes, CpG islands)]' derivation='Avg' name='[avg:RelativeDistanceToTSS (All genes, CpG islands):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Chromosome]' derivation='None' name='[none:Chromosome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Promoter_Classification (All genes, CpG islands)]' derivation='None' name='[none:Promoter_Classification (All genes, CpG islands):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr1&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr10&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr11&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr12&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr13&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr14&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr15&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr16&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr17&quot;' />
+              <groupfilter from='&quot;chr18&quot;' function='range' level='[none:Chromosome:nk]' to='&quot;chr2&quot;' />
+              <groupfilter from='&quot;chr20&quot;' function='range' level='[none:Chromosome:nk]' to='&quot;chr4&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr5&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr6&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr7&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr8&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr9&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chrX&quot;' />
+              <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chrY&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification (All genes, CpG islands):nk]'>
+            <groupfilter from='&quot;HCP&quot;' function='range' level='[none:Promoter_Classification (All genes, CpG islands):nk]' to='&quot;LCP&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk]</column>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification (All genes, CpG islands):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[avg:CpGLength (All genes, CpG islands):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#00aaff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[avg:RelativeDistanceToTSS (All genes, CpG islands):qk]</rows>
+        <cols>([federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk] / [federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification (All genes, CpG islands):nk])</cols>
+      </table>
+      <simple-id uuid='{24528553-D589-4620-8F1E-437300DC4913}' />
+    </worksheet>
+    <worksheet name='Gene on Chrom19'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Whatineed+ (Analysis Notebook)' name='federated.0mu049r0pvqd1n177j4m11sxk4ze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mu049r0pvqd1n177j4m11sxk4ze'>
+            <column datatype='string' name='[Chromosome]' role='dimension' type='nominal' />
+            <column datatype='string' name='[GeneName (All genes, CpG islands)]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[TranscriptsLength (All genes, CpG islands)]' role='measure' type='quantitative' />
+            <column-instance column='[Chromosome]' derivation='None' name='[none:Chromosome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[GeneName (All genes, CpG islands)]' derivation='None' name='[none:GeneName (All genes, CpG islands):nk]' pivot='key' type='nominal' />
+            <column-instance aggregation-param='95' column='[TranscriptsLength (All genes, CpG islands)]' derivation='Percentile' name='[prc95:TranscriptsLength (All genes, CpG islands):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk]'>
+            <groupfilter function='member' level='[none:Chromosome:nk]' member='&quot;chr19&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:GeneName (All genes, CpG islands):nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[prc95:TranscriptsLength (All genes, CpG islands):qk]</rows>
+        <cols>([federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Chromosome:nk] / [federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:GeneName (All genes, CpG islands):nk])</cols>
+      </table>
+      <simple-id uuid='{CE8CFE50-41FF-4929-9566-0BDFC950175A}' />
+    </worksheet>
+    <worksheet name='Methylation Density'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2C558E87-D045-4D79-A558-B686234A7EC7}' />
+    </worksheet>
+    <worksheet name='Peak M Value Per Chromosome'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Whatineed+ (Analysis Notebook)' name='federated.0mu049r0pvqd1n177j4m11sxk4ze' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mu049r0pvqd1n177j4m11sxk4ze'>
+            <column caption='Peak Chromosome' datatype='string' name='[PeakChromosome]' role='dimension' type='nominal' />
+            <column caption='Peak M Value' datatype='real' name='[PeakMValue]' role='measure' type='quantitative' />
+            <column caption='Promoter Classification' datatype='string' name='[Promoter_Classification]' role='dimension' type='nominal' />
+            <column-instance column='[Promoter_Classification]' derivation='Count' name='[cnt:Promoter_Classification:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PeakChromosome]' derivation='None' name='[none:PeakChromosome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PeakMValue]' derivation='Sum' name='[sum:PeakMValue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[cnt:Promoter_Classification:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>4389</max>
+          </filter>
+          <filter class='categorical' column='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:PeakChromosome:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr1&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr10&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr11&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr12&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr13&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr14&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr15&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr16&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr17&quot;' />
+              <groupfilter from='&quot;chr18&quot;' function='range' level='[none:PeakChromosome:nk]' to='&quot;chr2&quot;' />
+              <groupfilter from='&quot;chr20&quot;' function='range' level='[none:PeakChromosome:nk]' to='&quot;chr4&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr5&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr6&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr7&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr8&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chr9&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chrX&quot;' />
+              <groupfilter function='member' level='[none:PeakChromosome:nk]' member='&quot;chrY&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:PeakChromosome:nk]</column>
+            <column>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[cnt:Promoter_Classification:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:PeakMValue:qk]' scope='rows' value='Log2 Value of CpG Island Methylation' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:PeakMValue:qk]</rows>
+        <cols>[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:PeakChromosome:nk]</cols>
+      </table>
+      <simple-id uuid='{2FB21BB4-FB8F-46C3-AB76-D23BFE92E762}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Chrom19Dash'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='52375' id='3' name='Chrom19Promoter' w='39000' x='6400' y='30125' />
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10625' id='4' name='Chrom19Promoter' pane-specification-id='0' param='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification:nk]' w='17000' x='25900' y='54125' />
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='42750' id='7' w='43600' x='54600' y='55375'>
+          <formatted-text>
+            <run fontsize='16'>Chromosome 19 stands out as having the highest number of genes. It has the highest gene density at ~25 genes for every 1,000,000 base pairs! Chromosome 19 can hold up to 56 Megabytes of data!</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='11' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='10' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='52375' id='3' is-fixed='true' name='Chrom19Promoter' w='39000' x='6400' y='30125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='10625' id='4' name='Chrom19Promoter' pane-specification-id='0' param='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification:nk]' w='17000' x='25900' y='54125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='42750' id='7' w='43600' x='54600' y='55375'>
+                  <formatted-text>
+                    <run fontsize='16'>Chromosome 19 stands out as having the highest number of genes. It has the highest gene density at ~25 genes for every 1,000,000 base pairs! Chromosome 19 can hold up to 56 Megabytes of data!</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{05D6339A-C152-4304-92C6-E5EE0F5DF381}' />
+    </dashboard>
+    <dashboard name='ChromDash'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='87125' id='3' name=' Genes/Chrom' w='60600' x='700' y='11250' />
+        <zone h='69250' id='4' name='AvgTranscript Lengh/Chrom' w='35000' x='64700' y='8125' />
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='11000' id='5' name='AvgTranscript Lengh/Chrom' pane-specification-id='0' param='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:TranscriptsLength:qk]' w='17900' x='80700' y='12000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='13' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='12' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='69250' id='4' is-fixed='true' name='AvgTranscript Lengh/Chrom' w='35000' x='64700' y='8125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='11000' id='5' name='AvgTranscript Lengh/Chrom' pane-specification-id='0' param='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:TranscriptsLength:qk]' w='17900' x='80700' y='12000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='87125' id='3' is-fixed='true' name=' Genes/Chrom' w='60600' x='700' y='11250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{421772C1-4C64-418C-8160-39A9879536F0}' />
+    </dashboard>
+    <dashboard name='CpGDash'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='62500' id='3' name='Peak M Value Per Chromosome' w='97300' x='1400' y='36125' />
+        <zone h='23750' id='5' name='CpGIslandLengthPerChromosome' w='94000' x='1800' y='12875' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='11' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='10' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='190' h='23750' id='5' is-fixed='true' name='CpGIslandLengthPerChromosome' w='94000' x='1800' y='12875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='62500' id='3' is-fixed='true' name='Peak M Value Per Chromosome' w='97300' x='1400' y='36125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9D84FC0A-55A5-4E96-9EF3-BAFE4190DCAB}' />
+    </dashboard>
+    <dashboard name='Explanation'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='51000' id='5' w='55200' x='600' y='4625'>
+          <formatted-text>
+            <run fontsize='18'>DNA Methylation is a way that your body can turn genes &apos;off&apos;. Your entire genome contains ~20,000 genes. If every one of those was turned on 24/7, it would be extremely energetically taxing to you!</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='33250' id='8' is-centered='0' is-scaled='1' param='C:/Users/ehoug/Documents/NSS/Data/Capstone/presentationpics/dna2.png' w='33300' x='60400' y='13875' />
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='56500' id='9' w='59400' x='40300' y='47625'>
+          <formatted-text>
+            <run fontsize='18'>A specific enzyme, called DNMT, looks for specific repeats in your genome. These repeats are Cytosine Guaning Guanine, or abbreviated CGG for short. Clusters of these CGG repeats are called CpG islands, and DMNT will attach a -CH3 group to cytosine!</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='21375' id='10' is-centered='0' is-scaled='1' param='C:/Users/ehoug/Documents/NSS/Data/Capstone/presentationpics/DNA_methylation.png' w='33300' x='2500' y='67375' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='20' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='19' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='51000' id='5' w='55200' x='600' y='4625'>
+                  <formatted-text>
+                    <run fontsize='18'>DNA Methylation is a way that your body can turn genes &apos;off&apos;. Your entire genome contains ~20,000 genes. If every one of those was turned on 24/7, it would be extremely energetically taxing to you!</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='266' h='33250' id='8' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ehoug/Documents/NSS/Data/Capstone/presentationpics/dna2.png' w='33300' x='60400' y='13875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='56500' id='9' w='59400' x='40300' y='47625'>
+                  <formatted-text>
+                    <run fontsize='18'>A specific enzyme, called DNMT, looks for specific repeats in your genome. These repeats are Cytosine Guaning Guanine, or abbreviated CGG for short. Clusters of these CGG repeats are called CpG islands, and DMNT will attach a -CH3 group to cytosine!</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='171' h='21375' id='10' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ehoug/Documents/NSS/Data/Capstone/presentationpics/DNA_methylation.png' w='33300' x='2500' y='67375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E67B172F-A21A-402E-ABEF-F9BA5A1277E6}' />
+    </dashboard>
+    <dashboard name='IntroSlide'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='54000' id='3' w='99600' x='-200' y='9875'>
+          <formatted-text>
+            <run fontalignment='1' fontsize='48'>Your Genome&apos;s Dedication to Methylation</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='13000' id='4' w='38000' x='28700' y='52625'>
+          <formatted-text>
+            <run fontalignment='1' fontsize='14'>Elizabeth Houghton</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontsize='14'>Nashville Software School - DDA3</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='16' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='15' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='54000' id='3' w='99600' x='-200' y='9875'>
+                  <formatted-text>
+                    <run fontalignment='1' fontsize='48'>Your Genome&apos;s Dedication to Methylation</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='13000' id='4' w='38000' x='28700' y='52625'>
+                  <formatted-text>
+                    <run fontalignment='1' fontsize='14'>Elizabeth Houghton</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontsize='14'>Nashville Software School - DDA3</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{61742A44-F751-452F-A200-AA0A7C61923A}' />
+    </dashboard>
+    <dashboard name='MethylationStory' type='storyboard'>
+      <style>
+        <style-rule element='story-description'>
+          <format attr='background-color' id='story-description_6' value='#ffffff' />
+          <format attr='border-width' id='story-description_6' value='0' />
+          <format attr='border-style' id='story-description_6' value='none' />
+          <format attr='background-color' id='story-description_7' value='#ffffff' />
+          <format attr='border-width' id='story-description_7' value='0' />
+          <format attr='border-style' id='story-description_7' value='none' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98340' id='1' param='vert' removable='false' w='98426' x='787' y='830'>
+            <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' w='98426' x='787' y='830' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='87863' id='5' paired-zone-id='4' removable='false' w='98426' x='787' y='11307'>
+              <flipboard active-id='4' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Intro' captured-sheet='IntroSlide' id='1' />
+                  <story-point caption='Methylation? What is it?' captured-sheet='Explanation' id='3'>
+                    <capturedDeltas>
+                      <dashboard name='Explanation'>
+                        <zone id='5'>
+                          <formatted-text>
+                            <run fontsize='18'>DNA Methylation is a way that your body can </run>
+                            <run bold='true' fontsize='18'>turn genes &apos;off&apos;</run>
+                            <run fontsize='18'>. Your entire genome contains </run>
+                            <run bold='true' fontsize='18'>~20,000</run>
+                            <run fontsize='18'> genes. If every one of those was turned on 24/7, it would be </run>
+                            <run bold='true' fontsize='18'>extremely energetically taxing</run>
+                            <run fontsize='18'> to you!</run>
+                          </formatted-text>
+                        </zone>
+                        <zone id='9'>
+                          <formatted-text>
+                            <run fontsize='18'>A specific enzyme, called DNMT, looks for specific repeats in your genome. These repeats are Cytosine Guaning Guanine, or abbreviated</run>
+                            <run bold='true' fontsize='18'> CGG </run>
+                            <run fontsize='18'>for short. Clusters of these CGG repeats are called </run>
+                            <run bold='true' fontsize='18'>CpG islands</run>
+                            <run fontsize='18'>, and DNMT will attach a </run>
+                            <run bold='true' fontsize='18'>-CH3</run>
+                            <run fontsize='18'> group to cytosine!</run>
+                          </formatted-text>
+                        </zone>
+                      </dashboard>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Genes per Chromosome' captured-sheet='ChromDash' id='4' />
+                  <story-point caption='CpG Island Length per Chromosome' captured-sheet='CpGDash' id='5' />
+                  <story-point caption='Chromosome 19' captured-sheet='Chrom19Dash' id='6' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='18983' id='7' story-point-id='4' w='33268' x='61811' y='76349'>
+          <formatted-text>
+            <run fontsize='9'>Data from 2019 experiment conducted by Huang et al. at the Guangzhou Medical University Center. They aimed to look at the relationship of CpG islands and developmental features preimplantation embryos </run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{5F6F49A8-030A-480B-9C22-24EB100BD732}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' name='IntroSlide'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{B688F109-285E-49CB-B1EF-1F7366C7E0BB}' />
+    </window>
+    <window class='dashboard' name='Explanation'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{C9FC8F0B-02CB-4477-9020-FE2E770178E1}' />
+    </window>
+    <window class='dashboard' name='ChromDash'>
+      <viewpoints>
+        <viewpoint name=' Genes/Chrom'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='AvgTranscript Lengh/Chrom' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{CFF588B4-F8D0-4BD6-B475-6B4E6C65346E}' />
+    </window>
+    <window class='dashboard' name='CpGDash'>
+      <viewpoints>
+        <viewpoint name='CpGIslandLengthPerChromosome' />
+        <viewpoint name='Peak M Value Per Chromosome'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{642F3C3D-C748-4D13-B811-EBC35BF6EEB7}' />
+    </window>
+    <window class='dashboard' name='Chrom19Dash'>
+      <viewpoints>
+        <viewpoint name='Chrom19Promoter' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9461C7EB-354A-40C2-BD4E-A5E2CD0CA878}' />
+    </window>
+    <window class='worksheet' name=' Genes/Chrom'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C55699D0-F4EF-4100-B055-C11D86E335E5}' />
+    </window>
+    <window class='worksheet' name='AvgTranscript Lengh/Chrom'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[sum:TranscriptsLength:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DBA023D2-DCC5-4F2E-B852-BF1D3D8326F2}' />
+    </window>
+    <window class='worksheet' name='CpGIslandLengthPerChromosome'>
+      <cards>
+        <edge name='left'>
+          <strip size='144'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{73F4B9DC-2CA3-421A-8E39-7E15F2D81890}' />
+    </window>
+    <window class='worksheet' name='Peak M Value Per Chromosome'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[cnt:Promoter_Classification:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CA7AEBB7-2173-4239-B5E8-69F6E24F5756}' />
+    </window>
+    <window class='worksheet' name='Chrom19Promoter'>
+      <cards>
+        <edge name='left'>
+          <strip size='169'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[cnt:GeneName:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0163F10C-C878-405B-8DE2-41D45E807797}' />
+    </window>
+    <window class='worksheet' name='Methylation Density'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{52757CC8-91A0-4B1E-A303-28D022DE8668}' />
+    </window>
+    <window class='worksheet' name='DistanceToTSSFromPromoter19'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:Promoter_Classification (All genes, CpG islands):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3CBE669F-2D89-4754-A309-E9703C3198A0}' />
+    </window>
+    <window class='worksheet' name='DistanceToTSSFromPromoterAll'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D32C1671-B286-417E-AA9C-396DE94E2C19}' />
+    </window>
+    <window class='worksheet' name='Gene on Chrom19'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mu049r0pvqd1n177j4m11sxk4ze].[none:GeneName (All genes, CpG islands):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{62FE6A04-2044-48DD-8500-DF777F78B7B9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='MethylationStory'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{3CF284DD-78A6-4785-86CD-9A95AEE58B73}' />
+    </window>
+  </windows>
+</workbook>
